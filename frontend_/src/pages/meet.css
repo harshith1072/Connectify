@@ -1,0 +1,224 @@
+Lobby Container
+.lobbyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Form Elements */
+.lobbyContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.lobbyContainer .MuiTextField-root {
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.lobbyContainer .MuiButton-root {
+  width: 300px;
+  font-weight: bold;
+  background-color: #00c9ff;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.lobbyContainer .MuiButton-root:hover {
+  background-color: #007bff;
+}
+
+/* Local Video */
+.lobbyContainer video {
+  width: 320px;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+/* Meet Video Container */
+.meetVideoContainer {
+  background: #0f0f0f;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+}
+
+/* Chat Modal */
+.chatRoom {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #1e1e2f;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.chatContainer h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.chattingDisplay {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #2e2e3f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.chattingDisplay p {
+  margin: 0.3rem 0;
+}
+
+.chattingArea {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.chattingArea .MuiTextField-root {
+  flex: 1;
+}
+
+.chattingArea .MuiButton-root {
+  background-color: #00c9ff;
+  color: white;
+}
+
+.buttonContainers {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Local Video Style */
+.meetUserVideo {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Remote Users Grid */
+.conferenceView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.conferenceView video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+
+.lobbyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dcdfe3, #2a5298);
+  height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lobbyCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  animation: fadeInUp 0.6s ease;
+}
+
+.lobbyCard h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.lobbyCard .MuiTextField-root {
+  width: 300px;
+}
+
+.lobbyCard .MuiButton-root {
+  width: 300px;
+  font-weight: bold;
+  background-color: #00c9ff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.lobbyCard .MuiButton-root:hover {
+  background-color: #0088cc;
+}
+
+.lobbyVideoBox {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.lobbyVideo {
+  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Optional entrance animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
